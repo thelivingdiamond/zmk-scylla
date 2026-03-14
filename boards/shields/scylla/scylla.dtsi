@@ -1,9 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "scylla-layouts.dtsi"
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &default_transform;
+        zmk,physical-layout = &scylla_layout;
     };
 
     default_transform: keymap_transform_0 {
