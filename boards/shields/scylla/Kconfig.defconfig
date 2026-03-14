@@ -3,6 +3,12 @@ if SHIELD_SCYLLA_LEFT
         default "scylla"
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
+    config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+        default 1
+    config BT_MAX_CONN
+        default 3
+    config BT_MAX_PAIRED
+        default 3
 endif
 
 if SHIELD_SCYLLA_LEFT || SHIELD_SCYLLA_RIGHT
